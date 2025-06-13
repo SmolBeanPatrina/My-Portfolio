@@ -1,7 +1,27 @@
 body {
-    background-color:midnightblue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #333;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 .tabs {
-    font-palette: white;
+    position: relative;
+}
+
+.tab-label {
+    display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: #333;
+  margin-right: 5px;
+  line-height: 50px;
+  text-align: center;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+  transition: background 0.3s, color 0.3s;
 }
